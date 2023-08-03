@@ -24,8 +24,8 @@ let About = () => {
                     sx={{
                         height: 100,
                         width: 250,
-                        maxHeight: { xs: 100},
-                        maxWidth: { xs: 200},
+                        maxHeight: { xs: 50},
+                        maxWidth: { xs: 150},
                     }}
                     alt="Maciej Wrzeszcz"
                     src={Logo_v}
