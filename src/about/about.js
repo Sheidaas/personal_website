@@ -1,35 +1,58 @@
 import React from 'react';
+import {  } from 'react-responsive'
 import './about.css'
 import { Container, Typography, Box } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
-import Logo from '../static/logo.png'
+import Logo_v from '../static/sm_loga_v.svg'
+import SmLogo from '../static/sm_logo.png'
 import { AppBar, Toolbar } from "@mui/material";
 
 
-let about = () => {
+
+
+
+
+let About = () => {
+
 
     return (
         <Container className={'container'} maxWidth={false} disableGutters>
-            <AppBar className={'appbar'} title={'Hello'}/>
+
             <Grid className={'name'}>
                 <Box
                     component="img"
                     sx={{
-                        height: 150,
-                        width: 500,
-                        maxHeight: { xs: 150, md: 150 },
-                        maxWidth: { xs: 400, md: 500 },
+                        height: 100,
+                        width: 250,
+                        maxHeight: { xs: 100},
+                        maxWidth: { xs: 200},
                     }}
                     alt="Maciej Wrzeszcz"
-                    src={Logo}
+                    src={Logo_v}
                 />
             </Grid>
+
+
+
+
+
+
+
+
+
+
+
         </Container>
     )
 }
 
-export { about }
+export { About }
 
 /*
+
+    const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+    const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
  */
