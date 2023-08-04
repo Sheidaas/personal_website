@@ -17,30 +17,22 @@ let About = () => {
 
     return (
         <Container className={'container'} maxWidth={false} disableGutters>
-
             <Grid className={'name'}>
-                <Box
-                    component="img"
-                    sx={{
-                        height: 100,
-                        width: 250,
-                        maxHeight: { xs: 50},
-                        maxWidth: { xs: 150},
-                    }}
-                    alt="Maciej Wrzeszcz"
-                    src={Logo_v}
-                />
+                <a href={'https://www.instagram.com/maciej_wrzeszcz/'}>
+                    <Box
+                        component={'img'}
+                        sx={{
+                            height: 100,
+                            width: 250,
+                            maxHeight: { xs: 40, md: 100},
+                            maxWidth: { xs: 125, md: 250},
+                        }}
+                        alt="Maciej Wrzeszcz"
+                        src={Logo_v}
+                    />
+
+                </a>
             </Grid>
-
-
-
-
-
-
-
-
-
-
 
         </Container>
     )
